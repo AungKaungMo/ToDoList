@@ -1,50 +1,80 @@
-# React + TypeScript + Vite
+# To-Do List App with React and Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **To-Do List App** repository! This project is a simple yet powerful to-do list application built using **React**, **Typescript** and **Tailwind CSS**. It includes features like a calendar, year filter, modal, local storage integration, and more. The app is designed without relying on any external component libraries, ensuring a lightweight and customizable experience.
 
-Currently, two official plugins are available:
+![Project Overview](./assets/project-overview.png)  
+[Live Demo](https://oway-todolist.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Features**
 
-## Expanding the ESLint configuration
+✅ **Add, Edit, and Delete Tasks**: Easily manage your tasks with intuitive controls.
+✅ **Calendar Integration**: View tasks on a calendar for better organization.
+✅ **Year, Month, Day Filter**: Filter tasks by year, month, day to focus on specific timeframes.
+✅ **Modal for Task Details**: View and edit task details in a clean modal.
+✅ **Local Storage**: Save your tasks locally so they persist even after closing the browser.
+✅ **Context API**: Manage global state efficiently using React's Context API.
+✅ **TypeScript**: Strongly typed code for better maintainability and fewer runtime errors.
+✅ **Custom Components**: Built entirely without external component libraries for full control over styling and functionality.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## **Technologies Used**
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A strongly typed superset of JavaScript for scalable applications.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Context API**: For global state management.
+- **Local Storage**: To persist tasks in the browser.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## Installation & Setup
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/your-username/todo-list-app.git
+   cd todo-list-app
+   ```
+
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server**
+   ```sh
+   npm run dev
+   ```
+
+4. **Open in browser**  
+   Navigate to `http://localhost:5173/` in your browser.
+
+## Folder Structure
+```
+📂 public
+📂 src
+ ┣ 📂 assets      # Store image, css and font
+ ┣ 📂 components  # Reusable UI components
+ ┣ 📂 context     # Context API for state management
+ ┣ 📂 hooks       # Custom hooks
+ ┣ 📂 layout      # Project layout
+ ┣ 📂 pages       # Application pages
+ ┣ 📂 routes      # Routing system
+ ┣ 📂 types       # Typescript's ype declaration
+ ┣ 📂 utils       # Utility functions
+ ┣ 📜 App.tsx     # Main application file
+ ┣ 📜 index.tsx   # Entry point
+package.json
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contributing
+Feel free to contribute to this project! Fork the repo, make your changes, and submit a PR.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## License
+This project is open-source and available under the [MIT License](LICENSE).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+✨ **Built with love using React, TypeScript & Tailwind CSS** ✨
+
+
+
+
+
