@@ -2,7 +2,7 @@
 
 Welcome to the **To-Do List App** repository! This project is a simple yet powerful to-do list application built using **React**, **Typescript** and **Tailwind CSS**. It includes features like a calendar, year filter, modal, local storage integration, and more. The app is designed without relying on any external component libraries, ensuring a lightweight and customizable experience.
 
-![Project Overview](./assets/project-overview.png)  
+![Project Overview](./assets/images/login.png)  
 [Live Demo](https://oway-todolist.vercel.app)
 
 ## **Features**
